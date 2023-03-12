@@ -1,12 +1,12 @@
 class Game {
   constructor (player1, player2, height = 6, width = 7) {
-    this.players = [ player1, player2 ];
-    this.height = height;
-    this.width = width;
-    this.currPlayer = player1;
     this.makeBoard();
     this.makeHtmlBoard();
+    this.currPlayer = player1;
+    this.players = [ player1, player2 ];
     this.gameOver = false;
+    this.height = height;
+    this.width = width;
   }
 
   makeBoard () {
